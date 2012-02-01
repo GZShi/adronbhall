@@ -1,2 +1,0 @@
-/* cloud parallax animation */
-var move_element=function(f,c,b,e,i,a,d){var h=b+(c*(e-b));var g=a+(i*(d-a));$(f).css({left:h,top:g})};$(document).ready(function(){var a=null,b=null;$(window).mousemove(function(c){var d=c.pageY/$(window).height();var e=c.pageX/$(window).width();move_element("#clouds_white",e,-80,-20,d,110,90);move_element("#clouds_dark_blue",e,-60,-40,d,-25,-20);move_element("#clouds_blue",e,-30,-70,d,-30,-10)})});
